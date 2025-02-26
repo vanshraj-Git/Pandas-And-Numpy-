@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+u=np.array ([1,2,3,4,5,6,6,7,8,np.pi]) #np.pi and np.sin
+v=np.array ([1,2,3,4,5,6,6,7,8,np.pi])
+ 
+print(u+v)    #vector addition 
+print(u-v)    #vector subtraction
+print(u*v)    #vector cross product
+print(u/v)    #division
+print(np.dot(u,v)) #vector dot product
+
+#functions for normal operators in numpy 
+z1=np.add(u,v)
+z2=np.subtract(u,v)
+z3=np.multiply(u,v)
+z4=np.divide(u,v)
+z5=np.dot(u,v)
+
+print(z1)
+print(z2)
+print(z3)
+print(z4)
+print(z5)
+
+
+mean_u=u.mean()
+print(u.mean())
+print(u.std())
+print(u.max())
+print(u.min())
+print(u.min())
+
+x= np.linspace(0,2*np.pi,100) #using matplotlib to plot
+y=np.sin(x)
+plt.plot(x,y)
+plt.show()
