@@ -1,4 +1,0 @@
-import numpy as np
-X=np.array([[1,2],[2,1]])
-Y=np.array([[1,0],[0,1]])
-print(X+Y)
